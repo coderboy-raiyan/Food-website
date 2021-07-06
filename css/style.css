@@ -463,6 +463,11 @@ header nav .right-side-menu .sub-menu button:hover {
 .mian-chefs img {
   width: 32rem;
   height: 31rem;
+  border-radius: 1.8rem;
+  -webkit-border-radius: 1.8rem;
+  -moz-border-radius: 1.8rem;
+  -ms-border-radius: 1.8rem;
+  -o-border-radius: 1.8rem;
 }
 .mian-chefs .chef1 > h3,
 .mian-chefs .chef2 > h3,
