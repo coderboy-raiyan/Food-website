@@ -1,0 +1,565 @@
+/* 
+* Assignment Name : Food-Network
+* Given by : Programming Hero
+* Created by : Raiyan
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+/* Some Css default styles I needed  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  --primary-color: #575757;
+  --button-color: #fb8c47;
+}
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-color);
+}
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-color);
+}
+p,
+li,
+a,
+button {
+  font-family: "Quicksand", sans-serif;
+}
+p {
+  font-size: 1.6rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  padding: 1.3rem 2.4rem;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  background: var(--button-color);
+  cursor: pointer;
+}
+
+/* =================Our Header Styles ===========================*/
+
+header {
+  padding: 0 10rem;
+  width: 100%;
+  height: 100%;
+  background: url(../img/top-banner.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 6rem;
+}
+header nav {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*========= Left side menu ========*/
+header nav .left-side-menu {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .left-side-menu img {
+  width: 13rem;
+  height: 3.5rem;
+}
+header nav .left-side-menu .sub-menu {
+  display: flex;
+  height: inherit;
+}
+header nav .left-side-menu .sub-menu a {
+  margin-right: 4rem;
+}
+header nav .left-side-menu .sub-menu a li {
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  line-height: 3rem;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+header nav .left-side-menu .sub-menu a li:hover {
+  color: #fb8c47;
+}
+
+/* =======Right side menu============ */
+header nav .right-side-menu {
+  width: 30%;
+  display: flex;
+  justify-content: end;
+}
+header nav .right-side-menu .sub-menu {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  height: inherit;
+}
+header nav .right-side-menu .sub-menu a {
+  margin-right: 4rem;
+}
+header nav .right-side-menu .sub-menu a li {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #fb8c47;
+  border: 2px solid #fb8c47;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  padding: 1.4rem 2.6rem;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+header nav .right-side-menu .sub-menu a li:hover {
+  border-color: #e056fd;
+  color: #e056fd;
+}
+
+header nav .right-side-menu .sub-menu button {
+  padding: 1.6rem 2.6rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: aliceblue;
+  text-transform: capitalize;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+header nav .right-side-menu .sub-menu button:hover {
+  background: #e76f24;
+}
+
+/* =========================Hero section styles ===================*/
+.common-section {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ======hero right side ====== */
+.common-section .hero-left-side {
+  width: 50%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.common-section .hero-left-side h1 {
+  width: 51rem;
+  font-size: 5rem;
+  line-height: 150%;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+.common-section .hero-left-side h1 span {
+  color: var(--button-color);
+}
+.common-section .hero-left-side p {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: rgb(126, 126, 126);
+  width: 49.5rem;
+  line-height: 3rem;
+}
+.common-section .hero-left-side button {
+  padding: 2rem 4rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: white;
+  text-transform: capitalize;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  margin-top: 4rem;
+  box-shadow: 0px 1px 19px -4px #97908f;
+}
+.common-section .hero-left-side button:hover {
+  border: 2px solid #fb8c47;
+  background: transparent;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  color: #111011;
+  transform: translateY(-0.4rem);
+  -webkit-transform: translateY(-0.4rem);
+  -moz-transform: translateY(-0.4rem);
+  -ms-transform: translateY(-0.4rem);
+  -o-transform: translateY(-0.4rem);
+}
+/* ======hero right side ====== */
+.common-section .hero-right-side {
+  width: 50%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.common-section .hero-right-side img {
+  width: 55rem;
+  height: 58rem;
+}
+/* ===================2nd section styles================= */
+
+#about-section {
+  width: 100%;
+  height: 100%;
+  padding: 0rem 10rem;
+  background: url(../img/Frame\ 59.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 5rem;
+  margin-bottom: 6rem;
+}
+#about-section .hero-right-side {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 4rem;
+}
+#about-section .hero-left-side {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#about-section img {
+  width: 30rem;
+  height: 47rem;
+}
+#about-section button {
+  padding: 2rem 4rem;
+  font-size: 1.8rem;
+  border: 2px solid #fb8c47;
+  background: transparent;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  color: #111011;
+}
+#about-section button:hover {
+  color: white;
+  background: #fb8c47;
+  transform: translateY(-0.4rem);
+  -webkit-transform: translateY(-0.4rem);
+  -moz-transform: translateY(-0.4rem);
+  -ms-transform: translateY(-0.4rem);
+  -o-transform: translateY(-0.4rem);
+}
+
+/* ===============Recipie Section styles ===================*/
+.recipie-section {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 10rem;
+}
+.recipie-section .recipie-title {
+  font-size: 3.6rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.recipie-section .recipie-des {
+  width: 60rem;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 3rem;
+}
+.recipie-section .main-recipie {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 13rem;
+}
+.recipie-section .main-recipie .recipie1 > img,
+.recipie-section .main-recipie .recipie2 > img,
+.recipie-section .main-recipie .recipie3 > img {
+  width: 32rem;
+  height: 21rem;
+}
+.recipie-section .main-recipie .recipie1,
+.recipie-section .main-recipie .recipie2,
+.recipie-section .main-recipie .recipie3 {
+  width: 36rem;
+  height: 48rem;
+  background: #fff;
+  padding: 2rem 2rem;
+  margin-right: 4rem;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  box-shadow: rgb(216 216 216) 4px 7px 32px 0px;
+}
+.recipie-section .main-recipie .recipie1 > h3,
+.recipie-section .main-recipie .recipie2 > h3,
+.recipie-section .main-recipie .recipie3 > h3 {
+  width: 30rem;
+  font-size: 2.5rem;
+  color: #000;
+  margin: 1rem 0;
+}
+.recipie-section .main-recipie .recipie1 > p,
+.recipie-section .main-recipie .recipie2 > p,
+.recipie-section .main-recipie .recipie3 > p {
+  width: 32rem;
+  line-height: 2.9rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+  /* text-align: justify; */
+  margin: auto;
+}
+/*============== Followers ========sTyles */
+.followers {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+.followers-number {
+  display: flex;
+  width: 100%;
+  height: 21rem;
+  background: #fff;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8rem;
+  border-radius: 2rem;
+  box-shadow: rgb(200 200 200) 1px 5px 25px 0px;
+}
+.followers-number .number1 h2 {
+  font-size: 4rem;
+  color: #18191f;
+  font-weight: 800;
+}
+.followers-number .number1 p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/*========== Our Chefs styles  ====================================*/
+.our-chef {
+  width: 100%;
+  height: 100%;
+  padding: 0 10rem;
+  background: url(../img/Frame\ 57.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 9rem;
+  padding-top: 3rem;
+}
+.our-chef .chef-title {
+  font-size: 3.6rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+.our-chef .chef-des {
+  width: 60rem;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 6rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 3rem;
+}
+.mian-chefs {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mian-chefs .chef1,
+.mian-chefs .chef2,
+.mian-chefs .chef3 {
+  width: 38rem;
+  height: 55rem;
+  padding: 3rem 2rem;
+  border: 3px dashed #ddd;
+  cursor: pointer;
+  margin-right: 2.8rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.mian-chefs .chef1:hover,
+.mian-chefs .chef2:hover,
+.mian-chefs .chef3:hover {
+  border-color: #ff6347;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.mian-chefs img {
+  width: 32rem;
+  height: 31rem;
+}
+.mian-chefs .chef1 > h3,
+.mian-chefs .chef2 > h3,
+.mian-chefs .chef3 > h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 1rem 0rem;
+  color: #000;
+}
+.mian-chefs .chef1 > p,
+.mian-chefs .chef2 > p,
+.mian-chefs .chef3 > p {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #959393;
+  padding: 1rem 0rem;
+}
+.mian-chefs .chef1 > h4,
+.mian-chefs .chef2 > h4,
+.mian-chefs .chef3 > h4 {
+  width: 27%;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: auto;
+  background: tomato;
+  color: #fff;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.social-media-icons {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.social-media-icons a li {
+  font-size: 1.8rem;
+  color: #000;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.social-media-icons a li:hover {
+  color: #e76f24;
+}
+
+/* ================Our Footer Styles =====================*/
+.footer-section {
+  width: 100%;
+  height: 100%;
+  padding: 20px 10rem;
+  background: url(../img/bg_footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #111011;
+}
+.footer-main {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-main .footer-content {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4rem;
+}
+.footer-main .footer-content img {
+  margin-bottom: 6rem;
+}
+.footer-main .footer-content p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+#copyright {
+  margin-top: 5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  margin-left: 87rem;
+}
