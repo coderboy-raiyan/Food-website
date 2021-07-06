@@ -179,7 +179,7 @@ header nav .right-side-menu .sub-menu button:hover {
 /* ======hero right side ====== */
 .common-section .hero-left-side {
   width: 50%;
-  height: inherit;
+  height: 41rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -204,6 +204,7 @@ header nav .right-side-menu .sub-menu button:hover {
 }
 .common-section .hero-left-side button {
   padding: 2rem 4rem;
+  height: 7rem;
   font-size: 1.8rem;
   font-weight: 900;
   color: white;
@@ -241,8 +242,8 @@ header nav .right-side-menu .sub-menu button:hover {
   flex-direction: column;
 }
 .common-section .hero-right-side img {
-  width: 55rem;
-  height: 58rem;
+  width: 100%;
+  height: inherit;
 }
 /* ===================2nd section styles================= */
 
